@@ -107,10 +107,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Ev2-8L-Og8">
+                                <rect key="frame" x="205" y="456" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black (iOS)"/>
                         <constraints>
+                            <constraint firstItem="Ev2-8L-Og8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CFL-vU-isy"/>
+                            <constraint firstItem="Ev2-8L-Og8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DyL-fc-r9B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9V0-Rr-am2" secondAttribute="bottom" id="RLb-9R-TJU"/>
                             <constraint firstItem="9V0-Rr-am2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ypj-rg-z5o"/>
                             <constraint firstItem="9V0-Rr-am2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="YzP-m2-5cW"/>
@@ -118,6 +123,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Ev2-8L-Og8" id="aPM-PT-JCc"/>
                         <outlet property="counterLabel" destination="SPU-bZ-YME" id="4n6-4J-kbl"/>
                         <outlet property="imageView" destination="4Df-bj-uJc" id="blw-OS-Lk4"/>
                         <outlet property="noButton" destination="hfq-pQ-mJa" id="1TH-5s-WSC"/>

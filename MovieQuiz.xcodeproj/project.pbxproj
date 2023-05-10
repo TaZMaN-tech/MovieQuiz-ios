@@ -28,6 +28,9 @@
 		C07FDF0D29F965FA009EB438 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FDF0C29F965FA009EB438 /* Movie.swift */; };
 		C07FDF0F29F9798D009EB438 /* StatisticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FDF0E29F9798D009EB438 /* StatisticService.swift */; };
 		C07FDF1129F97EE3009EB438 /* GameRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FDF1029F97EE3009EB438 /* GameRecord.swift */; };
+		C091C97C2A0AC17E006855FB /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C97B2A0AC17E006855FB /* NetworkClient.swift */; };
+		C091C97E2A0ACD50006855FB /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C97D2A0ACD50006855FB /* MostPopularMovies.swift */; };
+		C091C9802A0ACDF8006855FB /* MoviesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C97F2A0ACDF8006855FB /* MoviesLoader.swift */; };
 		C0ACA88129D1F3A4008DFCAA /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0ACA87F29D1F3A4008DFCAA /* YS Display-Medium.ttf */; };
 		C0ACA88229D1F3A4008DFCAA /* YS Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0ACA88029D1F3A4008DFCAA /* YS Display-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		C07FDF0C29F965FA009EB438 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C07FDF0E29F9798D009EB438 /* StatisticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticService.swift; sourceTree = "<group>"; };
 		C07FDF1029F97EE3009EB438 /* GameRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecord.swift; sourceTree = "<group>"; };
+		C091C97B2A0AC17E006855FB /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		C091C97D2A0ACD50006855FB /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
+		C091C97F2A0ACDF8006855FB /* MoviesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesLoader.swift; sourceTree = "<group>"; };
 		C0ACA87F29D1F3A4008DFCAA /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 		C0ACA88029D1F3A4008DFCAA /* YS Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +146,8 @@
 				C0394E8A29F6F6EE00FBC548 /* QuestionFactoryDelegate.swift */,
 				C0394E9029F7044C00FBC548 /* AlertPresenterProtocol.swift */,
 				C07FDF0E29F9798D009EB438 /* StatisticService.swift */,
+				C091C97B2A0AC17E006855FB /* NetworkClient.swift */,
+				C091C97F2A0ACDF8006855FB /* MoviesLoader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 				C0394E8C29F7008500FBC548 /* AlertModel.swift */,
 				C07FDF0C29F965FA009EB438 /* Movie.swift */,
 				C07FDF1029F97EE3009EB438 /* GameRecord.swift */,
+				C091C97D2A0ACD50006855FB /* MostPopularMovies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C091C97C2A0AC17E006855FB /* NetworkClient.swift in Sources */,
 				AD5EE5DE284D7887003966EF /* UIColor+Extensions.swift in Sources */,
 				C0394E8F29F7041000FBC548 /* AlertPresenter.swift in Sources */,
+				C091C97E2A0ACD50006855FB /* MostPopularMovies.swift in Sources */,
 				C0394E8D29F7008500FBC548 /* AlertModel.swift in Sources */,
 				AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */,
 				C0394E9129F7044C00FBC548 /* AlertPresenterProtocol.swift in Sources */,
@@ -258,6 +269,7 @@
 				C0394E8529F6E34A00FBC548 /* QuizResultsViewModel.swift in Sources */,
 				AD1ABAB42831907B00B3E448 /* SceneDelegate.swift in Sources */,
 				C07FDF0F29F9798D009EB438 /* StatisticService.swift in Sources */,
+				C091C9802A0ACDF8006855FB /* MoviesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
