@@ -167,12 +167,13 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
                                compition: { [weak self] _ in
             guard let self = self else { return }
             
-            self.currentQuestionIndex = 0
-            self.correctAnswers = 0
+            showLoadingIndicator()
+            questionFactory?.loadData()
             
-            self.questionFactory?.requestNextQuestion()
         })
         
-        alertPresenter?.show(allertModel: model)
+        let alert = alertPresenter?.show(allertModel: model)
+        guard let alert = alert else { return }
+        self.present(alert, animated: true, completion: nil)
     }
 }
